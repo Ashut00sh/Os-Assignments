@@ -1,0 +1,273 @@
+===============================================
+Q1
+
+date
+Mon Sep  7 09:20:40 PDT 2020
+date +%Y
+2020
+
+date +%y
+20
+
+date +%T
+09:21:07
+
+date +%b
+Sep
+
+date +%B
+September
+
+cal
+
+cal -m1
+
+
+cal 2022
+
+cal 2022 -m1
+=================================================
+Q2
+A
+
+mkdir a b c
+cd a
+touch a.txt b.txt c.txt
+cd b 
+touch a.txt b.txt c.txt
+cd c
+touch a.txt b.txt c.txt
+
+cp -r c a
+
+B
+
+mv b c
+C
+alias ashutosh='ls -lh'
+D
+mv a cdac
+==============================================
+Q3
+cat>file1.txt
+"message" 
+
+cat>file2.txt
+"message" 
+
+cat>file3.txt
+"message" 
+
+cat>file4.txt
+"message" 
+
+cat>file5.txt
+"message"
+ 
+grep "s" *.txt
+
+touch a.txt b.txt c.txt d.txt e.txt
+
+B
+cat > file.txt 
+nano file.txt
+C
+ touch file1.txt file2.txt file3.txt file4.txt file5.txt
+ 
+D
+	rm -r a
+	rm -r b c
+
+====================================
+Q4
+A
+vi fiel.txt
+cat file1.txt
+B
+cat -n file.txt
+C
+tac file.txt
+D
+cat file1.txt >> file3.txt
+=====================================
+Q5
+A
+ls -1
+ls
+
+B
+ls -1   (sort by name asc)
+ls -1 -r (sort by name desc)
+ls -al -S (sort by size desc)
+ls -al -Sr <sort by size asc)
+C
+touch .ashutosh.txt
+ls -a
+D
+touch -t file2.txt
+E
+ls -R
+F
+ls -l
+G
+ls -ld
+=========================================
+
+
+Q1
+mkdir vipul
+touch a.txt b.txt c.txt d.txt
+
+chmod +rw a.txt b.txt
+
+chmod +w c.txt
+
+cat>d.hs
+#/bin/sh
+
+chmod +x d.sh
+
+=======================================
+Q2
+chmod +x vipul
+================
+Q3
+chmod -x vipul
+chmod -r vipul
+=================
+Q4
+echo $(file.txt)
+
+Q5
+echo>>"HELLO THIS IS MESSAGE" >> file.txt
+===============================
+Q6
+echo *.conf
+
+Q7
+echo "Abhishek" >> data.txt
+=========================================
+
+Q1
+mkdir a
+cd a
+mkdir b
+cd b
+mkdir c
+
+touch file.txt
+
+cp c a
+
+cp a b
+========================================
+Q2
+chmod +r c
+cp a c
+
+cd b
+mkdir data
+
+chmod +rw b
+
+cd b
+touch data.txt
+
+mv c copied_dir
+
+chmod +x copied_dir
+
+cd copied_dir
+ls 
+======================================
+3.	Try copying third level c directory to outside of a
+
+	> cp b/c ../
+
+4.	Create the directory  “data“ inside b
+
+	> mkdir b/data
+
+5.	Change the permission of b to read and write only
+
+	> chmod u+rw b
+
+6.	Create directory “data2”  inside b
+
+	> mkdir b/data2
+
+7.	Create data.txt file inside b
+	
+	> touch b/data.txt
+
+8.	Rename the second level directory c to copied_dir
+
+	> mv b/c a
+
+9.	Change permission of copied_dir to only executable
+
+	> chmod u+x b/c
+
+10.	Try ls on copied_dir
+
+	> ls cannot run because of executable only cannot read
+
+11.	Try moving copied_dir to outside of a
+
+	> cannot move dir to outside because of restriced permissions
+
+12.	Try moving data directory outside of a
+
+	> cannot move, permission access denied
+
+13.	Now change the owner of the directory a to root
+
+	> chmod 
+
+14.	Change permission of a to read write and executable to only user
+
+	> chmod u+rwx a
+
+15.	Try creating directory sample inside a
+
+	> 
+
+16.	Create directory x outside a
+
+	> mkdir ../xpwd
+
+17.	Try moving x inside a
+
+	> mv x ./a
+
+18.	Create directory movies
+
+	> mkdir movies
+
+19.	Change group of movies to sudo
+
+	>  
+
+20.	Change group of movies to avahi
+
+	> 
+ 
+21.	Try changing permission after changing ownership to root
+
+	> 
+
+22.	Try Changing permission after changing group to sudo without sudo
+
+	>
+
+23.	Try Changing owner and group both to root
+
+	>
+
+24.	Try changinging permission
+
+	>
+
+25.	Try deleting the file
+
+	>
