@@ -145,7 +145,7 @@ Q6
 echo *.conf
 
 Q7
-echo "Abhishek" >> data.txt
+echo "Ashutosh" >> data.txt
 =========================================
 
 Q1
